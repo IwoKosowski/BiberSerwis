@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Racing Sans One';
+}
+
+nav {
+    font-size: 25px;
+    text-transform: uppercase;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+nav div img {
+    image-rendering: auto;
+    width: 150px;
+    height: 150px;
+    cursor: none;
+}
+
+nav div {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+nav div:hover {
+    color: red;
+    opacity: 0.8;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    height: 80vh;
+
+
+}
+
+.gallery img {
+
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+
+    font-size: 30px;
+    margin-top: 1vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+footer div {
+    font-family: 'Old Standard TT', serif;
+}
+
+article span {
+    margin-top: 1vw;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+article p {
+
+    font-family: 'Old Standard TT', serif;
+    margin-top: 1vh;
+    display: block;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.OFFER ul {
+    list-style-type: none;
+    display: block;
+    height: 40px;
+}
+
+.OFFER ul li {
+    margin-top: 1vh;
+    font-family: 'Old Standard TT', serif;
+    display: block;
+    float: left;
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.OFFER ul::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.promo div {
+    margin-top: 1vh;
+    width: 20%;
+    height: 250px;
+    text-align: center;
+    font-size: 40px;
+
+    border: 2px black solid;
+}
+
+.promo div ul {
+    list-style-type: none;
+    border-top: 2px solid black;
+    margin-bottom: 2vh;
+
+}
+
+.promo div ul li {
+    font-family: 'Old Standard TT', serif;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.promo div ul li:first-child {
+    margin-top: 2vh;
+}
+
+.desc {
+
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.desc::first-letter {
+    font-size: 300%;
+    color: black;
+}
+
+
+
+.firm .name {
+    opacity: 0;
+
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+
+
+.OFFER .name {
+    opacity: 0;
+
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+
+.promoc .name {
+    opacity: 0;
+
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+
+.kont .name {
+    opacity: 0;
+
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+a:hover {
+    color: red;
+    opacity: 0.8;
+}
+
+@media(max-width:1300px) AND (min-width:1240px) {
+
+    .promo div {
+        margin-top: 1vh;
+        width: 20%;
+        height: 300px;
+        text-align: center;
+        font-size: 40px;
+
+        border: 2px black solid;
+    }
+}
+
+@media(max-width:1240px) and (min-width:1100px) {
+    .promo {
+        flex-wrap: wrap;
+    }
+
+    .promo div {
+        margin-top: 1vh;
+        width: 50%;
+        height: 300px;
+        text-align: center;
+        font-size: 40px;
+
+        border: 2px black solid;
+    }
+}
+
+
+@media(max-width:1100px) and (min-width:909px) {
+    .promo {
+        flex-wrap: wrap;
+    }
+
+    .promo div {
+        margin-top: 1vh;
+        width: 50%;
+        height: 300px;
+        text-align: center;
+        font-size: 40px;
+
+        border: 2px black solid;
+    }
+
+    footer {
+        font-size: 20px;
+        margin-top: 1vh;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+
+}
+
+
+
+@media(max-width:910px) and (min-width:720px) {
+
+    .promoc .name {
+        margin-top: 15vh;
+    }
+
+    .promo {
+        margin-top: 1vh;
+    }
+
+    .promo div {
+        margin-top: 1vh;
+        width: 50%;
+        height: 200px;
+        text-align: center;
+        font-size: 20px;
+
+        border: 2px black solid;
+    }
+
+    .promo div span {
+        font-size: 30px;
+    }
+
+    .promo div ul li {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 20px;
+        margin-top: 1vh;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .OFFER ul li {
+
+
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+}
+
+
+
+@media(max-width:720px) {
+
+    .promoc .name {
+        margin-top: 15vh;
+    }
+
+    .promo {
+        margin-top: 1vh;
+        flex-wrap: wrap;
+    }
+
+    .promo div {
+        margin-top: 1vh;
+        height: 30vh;
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+        border: 2px black solid;
+    }
+
+    .promo div span {
+        font-size: 30px;
+    }
+
+    .promo div ul li {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 20px;
+        margin-top: 1vh;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .OFFER ul li {
+
+
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .OFFER ul li {
+        width: 100%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    footer div {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    footer img {
+        width: 100%;
+        display: none;
+
+    }
+
+    nav div {
+        font-size: 20px;
+    }
+
+    nav div img {
+        display: none;
+    }
+}
+
+
+@media(max-width:720px) and (orientation:landscape) {
+
+    .promoc .name {
+        margin-top: 15vh;
+    }
+
+    .promo {
+        margin-top: 1vh;
+        flex-wrap: wrap;
+    }
+
+    .promo div {
+        margin-top: 1vh;
+        height: 50vh;
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+        border: 2px black solid;
+    }
+
+    .promo div span {
+        font-size: 30px;
+    }
+
+    .promo div ul li {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 20px;
+        margin-top: 1vh;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .OFFER ul li {
+
+
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .OFFER ul li {
+        width: 100%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    footer div {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    footer img {
+        width: 100%;
+        display: none;
+
+    }
+
+    nav div {
+        font-size: 20px;
+    }
+
+    nav div img {
+        display: none;
+    }
+}
